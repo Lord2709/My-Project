@@ -790,7 +790,8 @@ try:
         col1, col2, col3 = st.columns([1,1,1])
         with col1:
             pass
-        radio = col2.radio(label="Select Input Category", options=['Single xlsx file', 'Bulk Conversion'])
+        radio = col2.radio(label="Select Input Category", options=['Single xlsx file'])
+        # radio = col2.radio(label="Select Input Category", options=['Single xlsx file', 'Bulk Conversion'])
         with col3:
             pass
 
@@ -925,20 +926,20 @@ try:
                         colors = display(os.listdir(os.getcwd().replace("\\","/"))[0],0,mod)
 
                         # Apply option for additiona features to be added to the main output file...
-                        if st.sidebar.checkbox("Apply Additional Features"):
-                            font_size = colors[-1]
-                            del colors[-1]
+                        # if st.sidebar.checkbox("Apply Additional Features"):
+                        #     font_size = colors[-1]
+                        #     del colors[-1]
          
-                            additional_features(colors,font_size,mod)                        
+                        #     additional_features(colors,font_size,mod)                        
     
-                            # Zipping files...
-                            if os.getcwd().rsplit("\\")[-1] == "output3":
-                                current_dir = os.getcwd()[:os.getcwd().index('\output3')].replace("\\","/")
-                            else:
-                                current_dir = os.getcwd().replace("\\","/")
+                        #     # Zipping files...
+                        #     if os.getcwd().rsplit("\\")[-1] == "output3":
+                        #         current_dir = os.getcwd()[:os.getcwd().index('\output3')].replace("\\","/")
+                        #     else:
+                        #         current_dir = os.getcwd().replace("\\","/")
 
 
-                            zip_file(current_dir,0)
+                        #     zip_file(current_dir,0)
                             
 
             except TypeError:
