@@ -20,6 +20,8 @@ import plotly.graph_objects as go
 from zipfile import ZipFile
 from os.path import basename
 
+import requests
+from io import BytesIO
 
 from datetime import datetime
 start_time = datetime.now()
@@ -781,7 +783,14 @@ try:
         global radio
         
         try:
-            image = Image.open(r"C:\Users\Sahil\Desktop\Project\Code_IMG.jpg")
+            # image = Image.open(r"C:\Users\Sahil\Desktop\Project\Code_IMG.jpg")
+            original_url = "https://drive.google.com/file/d/1NfGEDUatFZUOPaZh570EdWn1zy5WFdOx/view?usp=sharing"
+            file_id = original_url.split('/')[-2]
+            dwn_url='https://drive.google.com/uc?export=download&id=' + file_id
+            url = requests.get(dwn_url).content
+            path = BytesIO(url)
+
+            image = Image.open(path)
             st.image(image)
         except:
             print("Error in opening image.")
