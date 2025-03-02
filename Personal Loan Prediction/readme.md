@@ -83,3 +83,10 @@ Model performance was evaluated based on:
 
 ## **Conclusion**
 This predictive model effectively identifies customers with a **high probability of accepting personal loans**, enabling AllLife Bank to optimize its marketing strategy. The insights derived will help in **maximizing loan conversions** while ensuring efficient allocation of resources for customer targeting.
+
+---
+
+## **View the Full Analysis**
+You can view the complete analysis and model implementation in the Jupyter Notebook using the following link:
+
+[View Notebook on nbviewer](https://nbviewer.org/github/Lord2709/My-Project/blob/main/Personal%20Loan%20Prediction/Loan_Modelling.html)
