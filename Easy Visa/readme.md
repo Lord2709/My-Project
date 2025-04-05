@@ -1,4 +1,4 @@
-# **Visa Approval Prediction – Employment-based Certifications**
+# **Visa Approval Prediction**
 
 ## **Overview**  
 This project focuses on analyzing and predicting the approval of employment-based visa applications using machine learning techniques. With increasing international job mobility and competitive labor markets, it's vital for employers and government bodies to understand which factors significantly influence visa approval outcomes.
