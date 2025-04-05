@@ -35,6 +35,26 @@ The dataset contains historical records of employment-based visa applications an
 
 ---
 
+## **Model Evaluation Criteria**
+
+A predictive model for visa approval can err in two significant ways:
+
+1. **False Positive**: The model predicts a visa will be approved, but it should be denied.
+2. **False Negative**: The model predicts a visa will be denied, but it should be approved.
+
+### **Which is More Critical?**
+
+- **False Positives** can allow unqualified candidates to take jobs potentially meant for U.S. citizens.
+- **False Negatives** can result in **losing valuable international talent** that could contribute to the economy.
+
+### **Evaluation Strategy**
+
+- **F1 Score**: Chosen as the primary metric to balance both precision and recall.
+- **Balanced Class Weights**: Ensures neither approvals nor denials are unfairly prioritized.
+- **Confusion Matrix Analysis**: Used to fine-tune decision thresholds and assess real-world implications.
+
+---
+
 ## **Analysis & Methodology**
 
 ### **1. Exploratory Data Analysis (EDA)**
